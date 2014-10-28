@@ -1,0 +1,19 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  username: root
+  password:
+  socket: /tmp/mysql.sock
+
+
+development:
+  <<: *default
+  database: contacts_development
+
+test:
+  <<: *default
+  database: contacts_test
+
+production:
+  <<: *default
+  database: contacts_production
