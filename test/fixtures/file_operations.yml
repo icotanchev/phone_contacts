@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  file_path: MyString
+  status: MyString
+  job_class: MyString
+  user_type: MyString
+  user_id: 1
+  info: MyText
+
+two:
+  file_path: MyString
+  status: MyString
+  job_class: MyString
+  user_type: MyString
+  user_id: 1
+  info: MyText

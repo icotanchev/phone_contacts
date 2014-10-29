@@ -1,0 +1,15 @@
+%h3 Exported Files
+
+%table
+  %tr
+    %th File name
+    %th Status
+    %th
+    %th
+
+  - @file_operations.each do |file_operation|
+    %tr
+      %td= file_operation.file_path.split('/').last
+      %td= file_operation.status
+      %td= link_to 'Download', file_operation
+      %td= link_to 'Destroy', file_operation, :method => :delete, :data => { :confirm => 'Are you sure?' }

@@ -1,0 +1,22 @@
+%h3 Contacts
+
+%table.table-striped
+  %tr
+    %th Name
+    %th Number
+    %th
+    %th
+
+  - @contacts.each do |contact|
+    %tr
+      %td= contact.name
+      %td= contact.number
+      %td= link_to 'Edit', edit_contact_path(contact)
+      %td= link_to 'Destroy', contact, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'Export CSV', contacts_path(format: 'csv')
+%br
+
+= link_to 'Remove dublications', remove_dub_contacts_path

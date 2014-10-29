@@ -17,7 +17,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'therubyracer', '~> 0.12.1'
 gem 'haml-rails', '0.5.3'
 gem 'jquery-rails', '~> 3.1.1'
-# gem 'turbolinks', '~> 2.2.2'
+gem 'turbolinks', '~> 2.3.0'
 gem 'jbuilder', '~> 2.0'
 
 group :development, :test do

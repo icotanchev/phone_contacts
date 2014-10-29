@@ -7,7 +7,7 @@ Resque.redis = Redis.new(
   host:     redis_config['host'],
   port:     redis_config['port'],
   password: redis_config['password'])
-Resque.redis.namespace = 'ads'
+Resque.redis.namespace = 'phone_contacts'
 
 # Load schedule configuration
 # Resque.schedule = YAML.load_file(Rails.root.join('config', 'resque_schedules.yml'))
